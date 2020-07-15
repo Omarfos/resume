@@ -1,0 +1,223 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\newcommand{\resumeItemLang}[3]{
+  \item\small{
+    \textbf{#1} \textit{#2}{: #3 \vspace{-2pt}}
+  }\vspace{-4pt}
+}
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.omaram.in/}{\Large Omar Amin}} & Email :
+    \href{mailto:omaramin4@gmail.com}{omaramin4@gmail.com}\\
+  \href{https://www.omaram.in/}{https://www.omaram.in} & Mobile : +1-347-774-4388 \\
+  \href{https://github.com/omarfos}{https://github.com/omarfos}
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Cornell University}{Ithaca, NY}
+      {Master of Engineering in Computer Science}{Aug. 2020 -- Present}
+    \resumeSubheading
+      {Stony Brook University}{Stony Brook, NY}
+      {Bachelor of Science in Computer Science;  GPA: 3.76 }{Aug. 2015 -- May.  2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {American Express}{New York City, NY}
+      {Software Engineer Intern}{Summer 2019 and Summer 2020}
+      \resumeItemListStart
+        \resumeItem{Know Your Customer}
+          {Improved customer service representatives' productivity by 10\% by
+          automating the KYC process by using Netflix Conductor to orchestrate
+          workflows and by working with ML team to implement a 
+          document classification and an optical character recognition API.}
+        \resumeItem{Document Classification Trainer}
+          {Reduced training time by over 300\% by building an intuitive and easy
+          to use React interface for labeling documents from AWS S3 and
+          automatically updating the corresponding ML model.}
+        \resumeItem{OneDrive Metrics Dashboard}
+          {Optimized migration time by 15\% by providing key insights and analytics by systematically collecting
+          metadata, and by visualizing it using Microsoft Power BI as company's
+          cloud storage was migrating to OneDrive.}
+        \resumeItem{Subscription Manager}
+          {Won first place in a hackathon out of 40 teams by creating a service for managing customers' subscriptions and providing
+          analytics.}
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+    \resumeSubheading
+      {Stony Brook University}{Stony Brook, NY}
+      {Teaching and Research Assistant}{Spring 2019 and Fall 2019}
+      \resumeItemListStart
+        \resumeItem{Head Teaching Assistant - Algorithms}
+          {Increased class median by 5\% by leading a team of 4 undergraduate
+          TAs, holding weekly review sessions, and creating effective practice
+          exams.}
+        \resumeItem{Research Assistant - Algorithms}
+          {Compiled over 100 exercises and diagrams for \textit{The Algorithm
+          Design Manual}.
+          }
+          \vspace{-5pt}
+      \resumeItemListEnd
+      \vspace{-5pt}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeItemLang{Hack Together}{Flask, React}
+      {Website for people to simultaneously compete in solving
+      algorithmic questions, which can be queried by difficulty, topic, and
+      company.}
+    \resumeItemLang{College For Me}{Django, React}
+    {Website for high school students to
+    record their college applications and to get intelligent recommendations and
+    metrics.}
+    \resumeItemLang{Xv6 Projects}{C, Intel x86}{
+      Various projects involving MIT's port of the UNIX v6 operating system such as a shell, a new
+      thread scheduling algorithm, utilities, virtual memory, and a file system.   
+    }
+    \resumeItemLang{Asynchronous Job Server}{C, Linux}{High performance Linux
+    server utilizing the latest system calls that accepts concurrent jobs from
+    clients and provides accounting and resource information.}
+    \resumeItemLang{Malloc Library}{C}{A wrapper over malloc that's able to
+    detect and report common C bugs involving pointers and memory corruption. In
+    addition, I created a specialized memory allocator that utilizes
+    segregated quick lists.}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages (10000+ lines of code)}
+      {Python, C, Java}
+    \resumeSubItem{Technologies}
+      {Django, React, Spring Boot, AWS, Google Cloud}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+
+%-----------PROJECTS-----------------
+\section{Courses}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Graduate}
+      {System Security, Wireless and Mobile Networks; \textit{Intented:} Machine Learning, Natural
+      Language Processing, Entrepreneurship for Scientists and Engineers, Distributed Systems}
+    \resumeSubItem{Undergraduate}
+      {Operating Systems, Computational Geometry, Data Science, Artificial Intelligence}
+  \resumeSubHeadingListEnd
+
+\section{Additional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Professional Gamer}{Los Angeles, CA}
+      {Game: League of Legends; Team: Counter Logic Gaming}{Dec. 2016 - May. 2018}
+      \resumeItemListStart
+        \resumeItem{Competitions}
+          {On a sabbatical from university, I competed internationally in
+          \textit{League of Legends} tournaments for the team, \textit{Counter
+          Logic Gaming}. I was recruited after placing top 10 out of a million
+          players on the solo rankings.}
+      \resumeItemListEnd
+      \vspace{-5pt}
+  \resumeSubHeadingListEnd
+\end{document}
